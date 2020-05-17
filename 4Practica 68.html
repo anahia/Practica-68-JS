@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 68-->
+
+<head>
+    <title>Practica 68</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <input type="checkbox" id="box" name="box"> Confirm the terms and conditions.
+    <br>
+    <input type="button" id="bott" name="bott" value="confirm" disabled>
+
+    <script>
+        addEventListener('DOMContentLoaded', start, false);
+
+        function start() {
+            document.getElementById('box').addEventListener('change', selec, false);
+        }
+
+        function selec() {
+
+            if (document.getElementById('box').checked == true) {
+                document.getElementById('bott').disabled = false;
+            } else
+                document.getElementById('bott').disabled = true;
+        }
+    </script>
+
+</body>
+
+</html>
